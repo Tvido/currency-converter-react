@@ -35,35 +35,39 @@ export const NavBar = () => {
   }
 
   function handleAmountFromChange(amountFrom) {
-    setAmountTo(format((amountFrom * data[currencyTo]) / data[currencyFrom]));
+    setAmountTo((amountFrom * data[currencyTo]) / data[currencyFrom]);
     setAmountFrom(amountFrom);
   }
 
   function handleCurrencyFromChange(currencyFrom) {
-    setAmountTo(format((amountFrom * data[currencyTo]) / data[currencyFrom]));
+    setAmountTo((amountFrom * data[currencyTo]) / data[currencyFrom]);
     setCurrencyFrom(currencyFrom);
   }
 
   function handleAmountToChange(amountTo) {
-    setAmountFrom(format((amountTo * data[currencyFrom]) / data[currencyTo]));
+    setAmountFrom((amountTo * data[currencyFrom]) / data[currencyTo]);
     setAmountTo(amountTo);
   }
 
   function handleCurrencyToChange(currencyTo) {
-    setAmountFrom(format((amountTo * data[currencyFrom]) / data[currencyTo]));
+    setAmountFrom((amountTo * data[currencyFrom]) / data[currencyTo]);
     setCurrencyTo(currencyTo);
+  }
+
+  function getCurrentCurrency(currency) {
+    return data ? (data["UAH"] * data[currency]).toFixed(2) : 0;
   }
 
   return (
     <div className={s.container}>
       <header className={s.header}>
-        <a className={s.logo} target="_blank" href="#" rel="noreferrer">
+        <a className={s.logo} target="_blank" href="/" rel="noreferrer">
           Currency Converter
         </a>
 
         <ul>
-          <li>USD: </li>
-          <li>EUR: </li>
+          <li>USD: {getCurrentCurrency("USD")} грн</li>
+          <li>EUR: {getCurrentCurrency("EUR")} грн</li>
         </ul>
 
         <a
@@ -72,7 +76,7 @@ export const NavBar = () => {
           href="https://tvido.github.io/viter-cv/"
           rel="noreferrer"
         >
-          CLICK ME
+          Click me
         </a>
       </header>
 

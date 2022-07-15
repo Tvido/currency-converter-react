@@ -8,7 +8,7 @@ export const Converter = (props) => {
     <div className={s.converter}>
       <input
         className={s.input}
-        type="number"
+        type="text"
         value={props.amount}
         onChange={(e) => props.onAmountChange(e.target.value)}
       />
@@ -18,7 +18,9 @@ export const Converter = (props) => {
         onChange={(e) => props.onCurrencyChange(e.target.value)}
       >
         {props.currencies.map((currency) => (
-          <option value={currency}>{currency}</option>
+          <option key={currency} value={currency}>
+            {currency}
+          </option>
         ))}
       </select>
     </div>
