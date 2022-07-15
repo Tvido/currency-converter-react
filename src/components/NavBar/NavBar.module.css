@@ -1,0 +1,77 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  width: calc(100% - 100px);
+  min-height: calc(100vh - 300px);
+  min-height: 300px;
+  background: linear-gradient(rgba(55, 137, 252, 0.3), rgba(0, 95, 168, 0.3));
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(15, 151, 255, 0.2);
+}
+
+.header {
+  position: absolute;
+  top: -50px;
+  left: 30px;
+  right: 30px;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(55, 137, 252, 0.1), rgba(0, 95, 168, 0.1));
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header .logo {
+  color: rgb(1, 49, 161);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+.header ul {
+  display: flex;
+}
+
+.header ul li {
+  list-style: none;
+  margin: 0 3rem;
+  font-weight: 600;
+  color: rgb(0, 30, 100);
+}
+
+.header .dev {
+  color: rgb(1, 49, 161);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.header .dev:hover {
+  background: rgba(255, 254, 254, 0.7);
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+}
+
+.content {
+  position: relative;
+  max-width: 400px;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: auto;
+  margin-right: auto;
+}

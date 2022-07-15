@@ -1,0 +1,18 @@
+.input {
+  /* display: inline-flex; */
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(97, 134, 219);
+  margin: 16px;
+  padding: 8px;
+  background: transparent;
+}
+
+.select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(97, 134, 219);
+  margin: 16px;
+  padding: 8px;
+  background: transparent;
+}

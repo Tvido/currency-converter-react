@@ -1,0 +1,23 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(99, 163, 253, 0.6), rgba(15, 151, 255, 0.2));
+  padding: 40px;
+}
+
+select::-webkit-scrollbar {
+  width: 8px;
+}
+
+select::-webkit-scrollbar-track {
+  background: rgba(55, 137, 252, 0.3);
+}
+
+select::-webkit-scrollbar-thumb {
+  background-color: rgb(1, 49, 161);
+  border-radius: 20px;
+  border: 1px solid rgba(15, 151, 255, 0.05);
+}
