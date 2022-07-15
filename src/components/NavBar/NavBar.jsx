@@ -30,9 +30,9 @@ export const NavBar = () => {
     }
   }, [data]);
 
-  function format(number) {
-    return number.toFixed(3);
-  }
+  // function format(number) {
+  //   return number.toFixed(3);
+  // }
 
   function handleAmountFromChange(amountFrom) {
     setAmountTo((amountFrom * data[currencyTo]) / data[currencyFrom]);
